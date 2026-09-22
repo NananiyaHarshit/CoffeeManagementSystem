@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: #FFF8F0;
+  --color-primary: #C08552;
+  --color-secondary: #8C5A3C;
+  --color-dark: #4B2E2B;
+  --color-text: #4B2E2B;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF8F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C08552;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8C5A3C;
+}
+
+/* Custom Helper Utilities */
+.heading-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.badge-roast {
+  @apply text-xs font-semibold px-2.5 py-1 rounded-full border border-caramel/30 bg-caramel/10 text-dark-espresso;
+}
